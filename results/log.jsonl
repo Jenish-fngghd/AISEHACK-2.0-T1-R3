@@ -1,0 +1,384 @@
+{"t": "2026-08-30T12:35:33", "stage": "p0_census", "s2": 114, "s1": 18, "s2_under20": 29, "s2_under20_octnov": 20, "verdict": "optical lead LIVES", "out": "C:\\Users\\sorat\\Downloads\\AISEHack_R2_SAR_Crop\\AISEHACK-2.0-T1-R3\\results\\tables\\p0_scene_census.csv"}
+{"t": "2026-08-30T12:37:43", "stage": "p0_weather", "lat": 22.4253, "lon": 73.1567, "hours": 5496, "out": "C:\\Users\\sorat\\Downloads\\AISEHack_R2_SAR_Crop\\AISEHACK-2.0-T1-R3\\results\\tables\\p0_weather_overpass.csv"}
+{"t": "2026-08-30T12:39:16", "stage": "p0_witness.start", "farms": 966, "bbox": [73.13306, 22.40831, 73.18026, 22.44238]}
+{"t": "2026-08-30T12:39:17", "stage": "p0_witness.s1_scenes", "relative_orbit": 34, "n": 18}
+{"t": "2026-08-30T12:40:58", "stage": "p0_inherit", "assets": 12, "usable": 10, "dest": "C:\\Users\\sorat\\Downloads\\AISEHack_R2_SAR_Crop\\AISEHACK-2.0-T1-R3\\data_aux\\inherited"}
+{"t": "2026-08-30T12:41:58", "stage": "p0_witness.s1_done", "cols": 36}
+{"t": "2026-08-30T12:44:24", "stage": "p0_witness.s2_done", "dates": 15}
+{"t": "2026-08-30T13:55:36", "stage": "p1_prep.start", "dates": ["20251029"], "grids": ["base"]}
+{"t": "2026-08-30T13:55:45", "stage": "p1_prep.incidence", "date": "20251029", "ours_mean": 29.8344, "vendor_center": 29.8399, "delta_deg": -0.0055, "aoi_min": 29.612, "aoi_max": 30.039}
+{"t": "2026-08-30T13:55:47", "stage": "p1_prep.slant", "date": "20251029", "win": "8944x3902", "sf": 0.0015576546231533322, "beta0_db_med": -18.28}
+{"t": "2026-08-30T13:55:50", "stage": "p1_prep.geocode", "date": "20251029", "grid": "base", "res": 5.0, "shape": "893x990", "valid_pct": 81.85, "gamma0_db_med": -18.63}
+{"t": "2026-08-30T13:55:52", "stage": "p1_prep.done"}
+{"t": "2026-08-30T13:56:06", "stage": "p1_prep.start", "dates": ["20250606", "20250619", "20250814", "20251013", "20251029", "20251112"], "grids": ["base", "fine"]}
+{"t": "2026-08-30T13:56:15", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-30T13:56:18", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-30T13:56:22", "stage": "p1_prep.geocode", "date": "20250606", "grid": "base", "res": 5.0, "shape": "893x990", "valid_pct": 87.74, "gamma0_db_med": -19.29}
+{"t": "2026-08-30T13:56:34", "stage": "p1_prep.geocode", "date": "20250606", "grid": "fine", "res": 2.0, "shape": "2231x2475", "valid_pct": 87.73, "gamma0_db_med": -19.61}
+{"t": "2026-08-30T13:56:46", "stage": "p1_prep.incidence", "date": "20250619", "ours_mean": 28.7608, "vendor_center": 28.7683, "delta_deg": -0.0075, "aoi_min": 28.542, "aoi_max": 28.98}
+{"t": "2026-08-30T13:56:48", "stage": "p1_prep.slant", "date": "20250619", "win": "9035x3910", "sf": 0.002362054213688219, "beta0_db_med": -16.66}
+{"t": "2026-08-30T13:56:51", "stage": "p1_prep.geocode", "date": "20250619", "grid": "base", "res": 5.0, "shape": "893x990", "valid_pct": 86.69, "gamma0_db_med": -18.16}
+{"t": "2026-08-30T13:57:03", "stage": "p1_prep.geocode", "date": "20250619", "grid": "fine", "res": 2.0, "shape": "2231x2475", "valid_pct": 86.68, "gamma0_db_med": -18.61}
+{"t": "2026-08-30T13:57:15", "stage": "p1_prep.incidence", "date": "20250814", "ours_mean": 28.6865, "vendor_center": 28.6921, "delta_deg": -0.0057, "aoi_min": 28.466, "aoi_max": 28.908}
+{"t": "2026-08-30T13:57:16", "stage": "p1_prep.slant", "date": "20250814", "win": "8895x3897", "sf": 0.001989031607832504, "beta0_db_med": -18.2}
+{"t": "2026-08-30T13:57:19", "stage": "p1_prep.geocode", "date": "20250814", "grid": "base", "res": 5.0, "shape": "893x990", "valid_pct": 86.84, "gamma0_db_med": -19.8}
+{"t": "2026-08-30T13:57:31", "stage": "p1_prep.geocode", "date": "20250814", "grid": "fine", "res": 2.0, "shape": "2231x2475", "valid_pct": 86.83, "gamma0_db_med": -20.17}
+{"t": "2026-08-30T13:57:44", "stage": "p1_prep.incidence", "date": "20251013", "ours_mean": 31.5222, "vendor_center": 31.5278, "delta_deg": -0.0056, "aoi_min": 31.309, "aoi_max": 31.736}
+{"t": "2026-08-30T13:58:37", "stage": "p1_prep.slant", "date": "20251013", "win": "8944x4244", "sf": 0.0013644344497360744, "beta0_db_med": -18.61}
+{"t": "2026-08-30T13:58:39", "stage": "p1_prep.geocode", "date": "20251013", "grid": "base", "res": 5.0, "shape": "893x990", "valid_pct": 87.11, "gamma0_db_med": -19.4}
+{"t": "2026-08-30T13:58:45", "stage": "p1_prep.geocode", "date": "20251013", "grid": "fine", "res": 2.0, "shape": "2231x2475", "valid_pct": 87.1, "gamma0_db_med": -19.78}
+{"t": "2026-08-30T13:58:50", "stage": "p1_prep.incidence", "date": "20251029", "ours_mean": 29.8344, "vendor_center": 29.8399, "delta_deg": -0.0055, "aoi_min": 29.612, "aoi_max": 30.039}
+{"t": "2026-08-30T13:58:51", "stage": "p1_prep.slant", "date": "20251029", "win": "8944x3902", "sf": 0.0015576546231533322, "beta0_db_med": -18.28}
+{"t": "2026-08-30T13:58:52", "stage": "p1_prep.geocode", "date": "20251029", "grid": "base", "res": 5.0, "shape": "893x990", "valid_pct": 81.85, "gamma0_db_med": -18.63}
+{"t": "2026-08-30T13:58:56", "stage": "p1_prep.geocode", "date": "20251029", "grid": "fine", "res": 2.0, "shape": "2231x2475", "valid_pct": 81.83, "gamma0_db_med": -19.08}
+{"t": "2026-08-30T13:59:00", "stage": "p1_prep.incidence", "date": "20251112", "ours_mean": 29.747, "vendor_center": 29.7459, "delta_deg": 0.0011, "aoi_min": 29.525, "aoi_max": 29.968}
+{"t": "2026-08-30T13:59:01", "stage": "p1_prep.slant", "date": "20251112", "win": "8470x4031", "sf": 0.0016243207275323567, "beta0_db_med": -20.2}
+{"t": "2026-08-30T13:59:02", "stage": "p1_prep.geocode", "date": "20251112", "grid": "base", "res": 5.0, "shape": "893x990", "valid_pct": 86.66, "gamma0_db_med": -21.55}
+{"t": "2026-08-30T13:59:06", "stage": "p1_prep.geocode", "date": "20251112", "grid": "fine", "res": 2.0, "shape": "2231x2475", "valid_pct": 86.65, "gamma0_db_med": -21.89}
+{"t": "2026-08-30T13:59:07", "stage": "p1_prep.done"}
+{"t": "2026-08-30T14:00:02", "stage": "p1_calib.nesz", "quantity": "beta0", "pct": 0.1, "mae_sf2_known": 1.853, "mae_sf2_new": 1.86, "known_band_db": [-0.09, 3.62], "new_abs_err": [2.843, 0.877], "kill_criterion": "PASS"}
+{"t": "2026-08-30T14:00:02", "stage": "p1_calib.nesz", "quantity": "gamma0", "pct": 0.1, "mae_sf2_known": 0.363, "mae_sf2_new": 0.982, "known_band_db": [-0.97, 1.59], "new_abs_err": [0.422, 1.542], "kill_criterion": "PASS"}
+{"t": "2026-08-30T14:00:02", "stage": "p1_calib.verdict", "n_scenes": 6, "pct": 0.1, "mae_beta0_under_SF": 29.29, "mae_beta0_under_SF2": 1.856, "ratio": 15.8}
+{"t": "2026-08-30T14:00:03", "stage": "p1_calib.fig", "name": "p1_calib_nesz.png"}
+{"t": "2026-08-30T14:01:03", "stage": "p1_calib.reference_quantity", "quantity": "beta0", "mean_db": 1.856, "mae_db": 1.856, "sd_db": 0.841, "n_below_floor": 0, "admissible": true}
+{"t": "2026-08-30T14:01:03", "stage": "p1_calib.reference_quantity", "quantity": "sigma0", "mean_db": -1.08, "mae_db": 1.08, "sd_db": 0.692, "n_below_floor": 6, "admissible": false}
+{"t": "2026-08-30T14:01:03", "stage": "p1_calib.reference_quantity", "quantity": "gamma0", "mean_db": -0.42, "mae_db": 0.569, "sd_db": 0.663, "n_below_floor": 4, "admissible": false}
+{"t": "2026-08-30T14:01:03", "stage": "p1_calib.nesz", "quantity": "beta0", "pct": 0.1, "mae_sf2_known": 1.853, "mae_sf2_new": 1.86, "known_band_db": [-0.09, 3.62], "new_abs_err": [2.843, 0.877], "kill_criterion": "PASS"}
+{"t": "2026-08-30T14:01:03", "stage": "p1_calib.nesz", "quantity": "sigma0", "pct": 0.1, "mae_sf2_known": 1.031, "mae_sf2_new": 1.177, "known_band_db": [-0.45, 2.47], "new_abs_err": [0.194, 2.16], "kill_criterion": "PASS"}
+{"t": "2026-08-30T14:01:03", "stage": "p1_calib.nesz", "quantity": "gamma0", "pct": 0.1, "mae_sf2_known": 0.363, "mae_sf2_new": 0.982, "known_band_db": [-0.97, 1.59], "new_abs_err": [0.422, 1.542], "kill_criterion": "PASS"}
+{"t": "2026-08-30T14:01:03", "stage": "p1_calib.verdict", "n_scenes": 6, "pct": 0.1, "mae_beta0_under_SF": 29.29, "mae_beta0_under_SF2": 1.856, "ratio": 15.8}
+{"t": "2026-08-30T14:01:03", "stage": "p1_calib.fig", "name": "p1_calib_nesz.png"}
+{"t": "2026-08-30T14:03:27", "stage": "p1_stable.classes", "valid_px": 713800, "water": 4824, "built": 1436, "crop": 168690, "water_thr_db": -19.84, "built_thr_db": -11.65, "defined_on": ["20250606", "20250619", "20250814", "20251013"]}
+{"t": "2026-08-30T14:03:27", "stage": "p1_stable.lookside", "built_sd_test_db": 1.587, "built_sd_worst_control_db": 1.222, "ratio": 1.299, "kill_threshold": 1.5, "verdict": "NO ANISOTROPY DETECTED"}
+{"t": "2026-08-30T14:03:27", "stage": "p1_stable.water_floor", "TEST_look-reversed": 2.778, "CTRL_same-look_A": 0.251, "CTRL_same-look_B": 0.252}
+{"t": "2026-08-30T14:03:27", "stage": "p1_stable.wetness", "crop_minus_built": {"20250606": -5.594, "20250619": -4.532, "20250814": -6.587, "20251013": -5.872, "20251029": -0.915, "20251112": -4.473}, "soil_moisture": {"20250606": 0.151, "20250619": 0.434, "20250814": 0.196, "20251013": 0.133, "20251029": 0.372, "20251112": 0.22}}
+{"t": "2026-08-30T14:03:28", "stage": "p1_stable.fig", "name": "p1_stable_targets.png"}
+{"t": "2026-08-30T14:06:10", "stage": "p1_stable.classes", "fold": "F1", "define_on": ["20250606", "20250619"], "water": 4774, "built": 1487, "crop": 168735}
+{"t": "2026-08-30T14:06:10", "stage": "p1_stable.classes", "fold": "F2", "define_on": ["20250814", "20251013"], "water": 3879, "built": 1646, "crop": 168582}
+{"t": "2026-08-30T14:06:10", "stage": "p1_stable.classes", "fold": "F3", "define_on": ["20250606", "20251013"], "water": 3823, "built": 1365, "crop": 168601}
+{"t": "2026-08-30T14:06:10", "stage": "p1_stable.classes", "fold": "F4", "define_on": ["20250619", "20250814"], "water": 4379, "built": 1930, "crop": 168645}
+{"t": "2026-08-30T14:06:10", "stage": "p1_stable.selection_bias", "cls": "built", "mean_db": 2.592, "per_fold": {"F1": 2.448, "F2": 3.349, "F3": 0.696, "F4": 3.875}}
+{"t": "2026-08-30T14:06:10", "stage": "p1_stable.selection_bias", "cls": "water", "mean_db": -0.524, "per_fold": {"F1": -0.163, "F2": -0.887, "F3": -0.391, "F4": -0.655}}
+{"t": "2026-08-30T14:06:10", "stage": "p1_stable.lookside", "built_sd_test_db": 1.815, "built_sd_worst_control_db": 1.923, "ratio": 0.944, "water_sd_test_db": 2.386, "kill_threshold": 1.5, "verdict": "NO ANISOTROPY DETECTED"}
+{"t": "2026-08-30T14:06:10", "stage": "p1_stable.wetness", "crop_minus_built": {"20250606": -3.785, "20250619": -3.938, "20250814": -6.514, "20251013": -4.736, "20251029": -0.709, "20251112": -4.283}, "rho_crop_soilm": 0.486, "rho_water_wind": 0.143, "rho_built_soilm": -0.143}
+{"t": "2026-08-30T14:06:11", "stage": "p1_stable.fig", "name": "p1_stable_targets.png"}
+{"t": "2026-08-30T14:08:50", "stage": "p1_feat.labels", "grid": "base", "lvl_-5m": 951, "lvl_-2m": 5, "lvl_0m": 10, "failed": 0}
+{"t": "2026-08-30T14:08:50", "stage": "p1_feat.date", "date": "20250606", "looks_est": 6.79, "n_with_pixels": 937, "g0_db_med": -19.16, "cv_med": 0.431, "nesz_margin_med": 8.46}
+{"t": "2026-08-30T14:08:51", "stage": "p1_feat.date", "date": "20250619", "looks_est": 5.42, "n_with_pixels": 913, "g0_db_med": -17.8, "cv_med": 0.476, "nesz_margin_med": 12.55}
+{"t": "2026-08-30T14:08:51", "stage": "p1_feat.date", "date": "20250814", "looks_est": 5.57, "n_with_pixels": 918, "g0_db_med": -19.82, "cv_med": 0.488, "nesz_margin_med": 10.76}
+{"t": "2026-08-30T14:08:51", "stage": "p1_feat.date", "date": "20251013", "looks_est": 5.92, "n_with_pixels": 925, "g0_db_med": -19.01, "cv_med": 0.469, "nesz_margin_med": 10.46}
+{"t": "2026-08-30T14:08:52", "stage": "p1_feat.date", "date": "20251029", "looks_est": 6.69, "n_with_pixels": 832, "g0_db_med": -17.4, "cv_med": 0.445, "nesz_margin_med": 12.77}
+{"t": "2026-08-30T14:08:52", "stage": "p1_feat.date", "date": "20251112", "looks_est": 6.12, "n_with_pixels": 937, "g0_db_med": -21.47, "cv_med": 0.442, "nesz_margin_med": 8.66}
+{"t": "2026-08-30T14:08:53", "stage": "p1_feat.glcm", "date": "20250606", "n": 925, "med": 3.261}
+{"t": "2026-08-30T14:08:53", "stage": "p1_feat.glcm", "date": "20250619", "n": 897, "med": 3.059}
+{"t": "2026-08-30T14:08:53", "stage": "p1_feat.glcm", "date": "20250814", "n": 901, "med": 3.079}
+{"t": "2026-08-30T14:08:54", "stage": "p1_feat.glcm", "date": "20251013", "n": 903, "med": 3.166}
+{"t": "2026-08-30T14:08:54", "stage": "p1_feat.glcm", "date": "20251029", "n": 817, "med": 3.204}
+{"t": "2026-08-30T14:08:54", "stage": "p1_feat.glcm", "date": "20251112", "n": 925, "med": 3.287}
+{"t": "2026-08-30T14:08:54", "stage": "p1_feat.done", "rows": 966, "cols": 111, "ok": 832, "partial": 105, "no_data": 29}
+{"t": "2026-08-30T14:10:50", "stage": "p1_traj.coverage_control", "worst_p": 1.4119624477694429e-11, "biased_dates": ["20250606", "20250619", "20250814", "20251013", "20251029", "20251112"]}
+{"t": "2026-08-30T14:10:50", "stage": "p1_traj.groundnut_lift", "primary_diff_db": 0.109, "primary_p": 0.4155, "control_diff_db": 1.274, "control_p": 0.0, "control_fired": true, "verdict": "DISCARDED -- control fired"}
+{"t": "2026-08-30T14:10:50", "stage": "p1_traj.identifiability", "n_farms": 832, "var_explained_pc": [0.5264, 0.2001, 0.1062, 0.0801, 0.0481, 0.0391], "cum_2pc": 0.7265, "cum_3pc": 0.8327, "newly_identifiable": ["asymmetric Gaussian", "logistic (single)", "SAFY (min free set)"]}
+{"t": "2026-08-30T14:10:51", "stage": "p1_traj.fig", "name": "p1_trajectory.png"}
+{"t": "2026-08-30T14:15:02", "stage": "p1_xcheck.date_mapping", "ours": [2, 0, 3, 1], "theirs": [2, 0, 3, 1], "consistent": true}
+{"t": "2026-08-30T14:15:02", "stage": "p1_xcheck.control", "worst_diagonal_margin": 0.2551, "threshold": 0.15, "verdict": "PASS"}
+{"t": "2026-08-30T14:15:02", "stage": "p1_xcheck.agreement", "r": [0.956, 0.9842, 0.9215, 0.8916], "offset_err_db": [27.918, 26.947, 27.969, 29.578], "resid_sd_db": [0.403, 0.684, 0.88, 0.825], "max_offset_err": 29.578}
+{"t": "2026-08-30T14:15:03", "stage": "p1_xcheck.fig", "name": "p1_xcheck.png"}
+{"t": "2026-08-30T14:16:40", "stage": "p1_xcheck.date_mapping", "ours": [2, 0, 3, 1], "theirs": [2, 0, 3, 1], "consistent": true}
+{"t": "2026-08-30T14:16:40", "stage": "p1_xcheck.control", "worst_diagonal_margin": 0.2551, "threshold": 0.15, "verdict": "PASS"}
+{"t": "2026-08-30T14:16:40", "stage": "p1_xcheck.agreement", "r": [0.956, 0.9842, 0.9215, 0.8916], "abs_offset_db": [1.185, 0.68, 0.955, 0.928], "resid_sd_db": [0.403, 0.684, 0.88, 0.825], "resid_vs_log_area_rho": [-0.268, -0.367, -0.27, -0.275], "sf_hypothesis": "FALSIFIED by 26.9 dB on all four dates -- Orion used the squared convention too"}
+{"t": "2026-08-30T14:16:41", "stage": "p1_xcheck.fig", "name": "p1_xcheck.png"}
+{"t": "2026-08-30T14:19:13", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-30T14:19:14", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-30T15:08:54", "stage": "p2.done", "doc": "internal/RESEARCH_PHASE2.md", "questions": ["R-A", "R-B", "R-C", "R-D", "R-E", "R-F", "R-G", "R-H"], "recommendation": "anchor level + SAFY-family modifier + ensemble spread; S1->scaffold, S2->witness", "gating_tests": ["X-band GAI proxy viability", "WCM re-test with bare-soil control", "label eta2 below 0.820"], "open": ["Gujarat kharif 2025-26 anchor", "cotton yield split across pickings", "Vadodara rank", "arXiv 2509.10321 unread"]}
+{"t": "2026-08-30T15:28:49", "stage": "p2.addendum", "conformal": "usable at village scale only; guarantee is 1-alpha-beta and beta is our unknown", "picking_split": "35/50/15 Sharma+Goyal 1999 via CSIR-CMERI; 80% of 1st picking on 10 Nov => ~28% picked", "gujarat_2025_sowing": "groundnut 20.41 > cotton 20.35 lakh ha; ours 23.2pp from state profile vs Orion ref 60.5pp", "our_weak_class": "bajra 9.5% vs state 2.9%", "vadodara_rank": "unverified after 3 searches", "cotton_year": "MY2025/26 463 kg/ha, flat on 464; down vs projection not vs history"}
+{"t": "2026-08-30T15:32:29", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-30T15:32:30", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-30T15:32:32", "stage": "p3.plan", "doc": "internal/PLAN_R3.md", "status": "awaiting approval, nothing built", "method": "anchor + per-plot modifier + ensemble/conformal uncertainty", "rejected": ["SAFY (gated on T1)", "process-based DA (parameterisation cost)"], "gates": ["T1 X-band GAI proxy", "T2 WCM bare-soil control", "T3 label eta2"], "baseline_gate": "31 Aug EOD", "hard_finish": "1 Sep EOD", "deadline": "3 Sep 12:30 IST"}
+{"t": "2026-08-30T15:49:47", "stage": "p3_t1.pairs", "pairs": [["20250606", "20250511", -26], ["20250619", "20250511", -39], ["20250814", "20251013", 60], ["20251013", "20251013", 0], ["20251029", "20251023", -6], ["20251112", "20251112", 0]], "same_day": ["20251013", "20251112"]}
+{"t": "2026-08-30T15:49:47", "stage": "p3_t1.skip", "capella": "20250606", "nearest_s2": "20250511", "gap_days": -26, "reason": "no optical within 10 days -- monsoon cloud"}
+{"t": "2026-08-30T15:49:47", "stage": "p3_t1.skip", "capella": "20250619", "nearest_s2": "20250511", "gap_days": -39, "reason": "no optical within 10 days -- monsoon cloud"}
+{"t": "2026-08-30T15:49:47", "stage": "p3_t1.skip", "capella": "20250814", "nearest_s2": "20251013", "gap_days": 60, "reason": "no optical within 10 days -- monsoon cloud"}
+{"t": "2026-08-30T15:49:47", "stage": "p3_t1.verdict", "rho_kill": 0.5, "same_day_pairs": ["20251013", "20251112"], "dates_with_any_clearing": 2, "best_feature": "g0_db", "best_rho": 0.6901, "best_crop": "Rice", "n_cells_clearing": 16, "n_cells": 60, "verdict": "FAIL -- criterion unmeetable: only 2 same-day pairs exist (monsoon cloud Jun-Sep)", "safy": "DEAD"}
+{"t": "2026-08-30T15:50:59", "stage": "p3_t2.bare_reference", "source": "Sentinel-2 NDVI 13 Oct, lowest decile", "ndvi_threshold": 0.1797, "n_plots": 83, "rise_db": 1.944, "soil_moisture_step": [0.133, 0.372]}
+{"t": "2026-08-30T15:51:00", "stage": "p3_t2.controls", "C1_physicality": "FAIL", "C1_detail": {"Cotton": [0.322, 0.605], "Rice": [0.462, 0.816], "Groundnut": [0.566, 0.908], "Maize": [0.916, 1.523], "Bajra": [1.271, 1.896]}, "C2_ordering": "FAIL", "C2_rho": -0.5, "C2_p": 0.391, "verdict": "WCM DISCARDED -- a control failed"}
+{"t": "2026-08-30T15:53:51", "stage": "p3_build.health", "variant": "primary_no29oct", "weights": {"level": 0.1491, "growth": 0.2174, "uniform": 0.2487, "persist": 0.1743, "senesce": 0.2105}, "median": 50.0, "iqr": 26.15}
+{"t": "2026-08-30T15:53:51", "stage": "p3_build.health", "variant": "alt_with29oct", "weights": {"level": 0.1491, "growth": 0.205, "uniform": 0.2594, "persist": 0.1741, "senesce": 0.2124}, "median": 50.0, "iqr": 26.2}
+{"t": "2026-08-30T15:53:51", "stage": "p3_build.flags", "dw_non_crop": 966, "dw_non_crop_area_pct": 100.0, "both_rules": 97, "both_area_pct": 9.44, "note": "FLAG, never a filter -- they still enter crop shares and the village aggregate"}
+{"t": "2026-08-30T15:53:51", "stage": "p3_build.eta2", "eta2_label": 0.9157, "r2_baseline": 0.82, "sar_share": 0.0843, "sar_share_r2": 0.18, "verdict": "NOT IMPROVED"}
+{"t": "2026-08-30T15:53:52", "stage": "p3_build.done", "production_t": 710.0, "village_yield_t_ha": 1.587, "area_ha": 447.5, "zones": 46, "zone_health_spread_pts": 39.7, "ensemble_spread_median_pts": 1.43}
+{"t": "2026-08-30T15:55:24", "stage": "p3_build.health", "variant": "primary_no29oct", "weights": {"level": 0.1491, "growth": 0.2174, "uniform": 0.2487, "persist": 0.1743, "senesce": 0.2105}, "median": 50.0, "iqr": 26.15}
+{"t": "2026-08-30T15:55:24", "stage": "p3_build.health", "variant": "alt_with29oct", "weights": {"level": 0.1491, "growth": 0.205, "uniform": 0.2594, "persist": 0.1741, "senesce": 0.2124}, "median": 50.0, "iqr": 26.2}
+{"t": "2026-08-30T15:55:24", "stage": "p3_build.flags", "dw_non_crop": 252, "dw_non_crop_area_pct": 16.58, "both_rules": 35, "both_area_pct": 2.3, "note": "FLAG, never a filter -- they still enter crop shares and the village aggregate"}
+{"t": "2026-08-30T15:55:24", "stage": "p3_build.eta2", "r2_shipped_measured": 0.9248, "brief_claimed": 0.82, "brief_reproduces": false, "r3_forecast": 0.9148, "r3_forecast_area_weighted": 0.9157, "r3_to_date": 0.9523, "sar_share_r2": 0.0752, "sar_share_r3": 0.0852, "verdict": "IMPROVED on R2 as measured", "caveat": "eta2 is dominated by the anchor spread across crops (0.73-2.51 t/ha), which is real agronomy; the within-crop ranking is validated separately against same-day S2 NDVI in T1"}
+{"t": "2026-08-30T15:55:24", "stage": "p3_build.done", "production_t": 710.0, "village_yield_t_ha": 1.587, "area_ha": 447.5, "zones": 46, "zone_health_spread_pts": 39.7, "ensemble_spread_median_pts": 1.43}
+{"t": "2026-08-30T15:56:24", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-30T15:56:24", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-30T15:56:43", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-30T15:56:44", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-30T16:17:51", "stage": "p3_unc.ensemble", "n_members": 8, "members": ["primary", "with_29oct", "equal_weights", "drop_0606", "drop_0619", "drop_0814", "drop_1013", "drop_1112"], "production_t": {"primary": 710.0, "with_29oct": 710.0, "equal_weights": 710.0, "drop_0606": 710.0, "drop_0619": 710.0, "drop_0814": 710.0, "drop_1013": 710.0, "drop_1112": 710.0}, "spread_t": 0.0, "spread_pct": 0.0}
+{"t": "2026-08-30T16:17:51", "stage": "p3_unc.morans_i", "I": 0.0833, "z": 7.41, "significant": true, "note": "plots are spatially correlated -- an independent-plot interval would be too narrow"}
+{"t": "2026-08-30T16:17:51", "stage": "p3_unc.village_interval", "production_t": 710.0, "block_90": [683.3, 736.3], "independent_90": [681.8, 737.8], "widening_factor": 0.95, "n_zones": 55, "note": "the independent interval is the one we would have shipped by default"}
+{"t": "2026-08-30T16:17:51", "stage": "p3_unc.conformal", "alpha": 0.1, "source": "arXiv 2509.10321", "guarantee": "P(Y in C) >= 1 - alpha - beta", "beta_bounded_from_our_data": false, "why": "our dominant error is the crop label; six-team kappa 0.060 bounds DISAGREEMENT, not error, so beta is not identifiable from anything we hold", "table": {"0.0": 0.9, "0.05": 0.85, "0.1": 0.8, "0.2": 0.7, "0.3": 0.6, "0.4": 0.5}}
+{"t": "2026-08-30T16:19:52", "stage": "p3_unc.ensemble", "n_members": 8, "members": ["primary", "with_29oct", "equal_weights", "drop_0606", "drop_0619", "drop_0814", "drop_1013", "drop_1112"], "village_spread_t": 0.0, "village_invariant": true, "why": "the modifier is normalised to area-weighted mean 1.0 within crop, so the village total is anchor x area and the SAR cannot move it -- this is the published limitation of anchor-plus-modifier, measured", "per_farm_sd_median_t_ha": 0.0279, "per_farm_sd_pct_median": 2.21}
+{"t": "2026-08-30T16:19:52", "stage": "p3_unc.morans_i", "I": 0.0833, "z": 7.41, "significant": true, "note": "plots are spatially correlated; an independent-plot interval on any sub-village statistic would be too narrow"}
+{"t": "2026-08-30T16:19:53", "stage": "p3_unc.village_interval", "production_t": 710.0, "label_only_90": [712.1, 753.7], "anchor_only_90": [599.5, 757.7], "both_90": [628.1, 798.1], "width_label_t": 41.6, "width_anchor_t": 158.2, "width_both_t": 170.0, "dominant": "anchor"}
+{"t": "2026-08-30T16:19:53", "stage": "p3_unc.conformal", "alpha": 0.1, "source": "arXiv 2509.10321", "guarantee": "P(Y in C) >= 1 - alpha - beta", "beta_bounded_from_our_data": false, "why": "our dominant error is the crop label; six-team kappa 0.060 bounds DISAGREEMENT, not error, so beta is not identifiable from anything we hold"}
+{"t": "2026-08-30T16:20:09", "stage": "p3_unc.ensemble", "n_members": 8, "members": ["primary", "with_29oct", "equal_weights", "drop_0606", "drop_0619", "drop_0814", "drop_1013", "drop_1112"], "village_spread_t": 0.0, "village_invariant": true, "why": "the modifier is normalised to area-weighted mean 1.0 within crop, so the village total is anchor x area and the SAR cannot move it -- this is the published limitation of anchor-plus-modifier, measured", "per_farm_sd_median_t_ha": 0.0279, "per_farm_sd_pct_median": 2.21}
+{"t": "2026-08-30T16:20:09", "stage": "p3_unc.morans_i", "I": 0.0833, "z": 7.41, "significant": true, "note": "plots are spatially correlated; an independent-plot interval on any sub-village statistic would be too narrow"}
+{"t": "2026-08-30T16:20:11", "stage": "p3_unc.village_interval", "production_t": 710.0, "label_only_90": [712.1, 753.7], "anchor_only_90": [599.5, 757.7], "both_90": [628.1, 798.1], "width_label_t": 41.6, "width_anchor_t": 158.2, "width_both_t": 170.0, "dominant": "anchor"}
+{"t": "2026-08-30T16:20:11", "stage": "p3_unc.conformal", "alpha": 0.1, "source": "arXiv 2509.10321", "guarantee": "P(Y in C) >= 1 - alpha - beta", "beta_bounded_from_our_data": false, "why": "our dominant error is the crop label; six-team kappa 0.060 bounds DISAGREEMENT, not error, so beta is not identifiable from anything we hold"}
+{"t": "2026-08-30T16:20:24", "stage": "p3_unc.ensemble", "n_members": 8, "members": ["primary", "with_29oct", "equal_weights", "drop_0606", "drop_0619", "drop_0814", "drop_1013", "drop_1112"], "village_spread_t": 0.0, "village_invariant": true, "why": "the modifier is normalised to area-weighted mean 1.0 within crop, so the village total is anchor x area and the SAR cannot move it -- this is the published limitation of anchor-plus-modifier, measured", "per_farm_sd_median_t_ha": 0.0279, "per_farm_sd_pct_median": 2.21}
+{"t": "2026-08-30T16:20:24", "stage": "p3_unc.morans_i", "I": 0.0833, "z": 7.41, "significant": true, "note": "plots are spatially correlated; an independent-plot interval on any sub-village statistic would be too narrow"}
+{"t": "2026-08-30T16:20:25", "stage": "p3_unc.village_interval", "production_t": 710.0, "label_only_90": [712.1, 753.7], "anchor_only_90": [599.5, 757.7], "both_90": [628.1, 798.1], "width_label_t": 41.6, "width_anchor_t": 158.2, "width_both_t": 170.0, "dominant": "anchor"}
+{"t": "2026-08-30T16:20:25", "stage": "p3_unc.conformal", "alpha": 0.1, "source": "arXiv 2509.10321", "guarantee": "P(Y in C) >= 1 - alpha - beta", "beta_bounded_from_our_data": false, "why": "our dominant error is the crop label; six-team kappa 0.060 bounds DISAGREEMENT, not error, so beta is not identifiable from anything we hold"}
+{"t": "2026-08-30T16:21:17", "stage": "p3_val.split", "west": 483, "east": 483, "boundary_easting": 310343.7}
+{"t": "2026-08-30T16:21:17", "stage": "p3_val.done", "n": 9, "passed": 7, "failed": 2, "failing": ["V4:glcm 0606", "V4:glcm 1112"], "claim": "nothing in the shipped path is fitted to a target; the spatial hold-out tests that claim rather than assuming it"}
+{"t": "2026-08-30T16:22:46", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 97.5}
+{"t": "2026-08-30T16:22:46", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 122.7}
+{"t": "2026-08-30T16:22:46", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 57.6}
+{"t": "2026-08-30T16:22:59", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 97.5}
+{"t": "2026-08-30T16:23:00", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 122.7}
+{"t": "2026-08-30T16:23:00", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 57.6}
+{"t": "2026-08-30T16:23:00", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 66.7}
+{"t": "2026-08-30T16:40:46", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 97.5}
+{"t": "2026-08-30T16:40:46", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 123.7}
+{"t": "2026-08-30T16:40:46", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 57.6}
+{"t": "2026-08-30T16:40:47", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.6}
+{"t": "2026-08-30T16:41:13", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-30T16:41:14", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 123.7}
+{"t": "2026-08-30T16:41:14", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-30T16:41:14", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.6}
+{"t": "2026-08-30T16:41:41", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-30T16:41:42", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 123.7}
+{"t": "2026-08-30T16:41:42", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-30T16:41:42", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-30T16:45:02", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-30T16:45:03", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-30T16:45:06", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-30T16:45:06", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-30T16:45:40", "stage": "p3.complete", "regression": "12/12", "defensibility": "19/19", "spatial_holdout": "7/9", "production_t": 710.0, "interval_90": [628, 798], "zones": 46, "deliverables": ["WRITEUP.md", "PRESENTATION.md", "results/submission.csv", "4 figures"], "r2_freeze": "89b0e4e2aef63ace4989fc0a44590ee5"}
+{"t": "2026-08-30T19:50:16", "stage": "p3_unc.ensemble", "n_members": 8, "members": ["primary", "with_29oct", "equal_weights", "drop_0606", "drop_0619", "drop_0814", "drop_1013", "drop_1112"], "village_spread_t": 0.0, "village_invariant": true, "why": "the modifier is normalised to area-weighted mean 1.0 within crop, so the village total is anchor x area and the SAR cannot move it -- this is the published limitation of anchor-plus-modifier, measured", "per_farm_sd_median_t_ha": 0.0279, "per_farm_sd_pct_median": 2.21}
+{"t": "2026-08-30T19:50:16", "stage": "p3_unc.morans_i", "I": 0.0833, "z": 7.41, "significant": true, "note": "plots are spatially correlated; an independent-plot interval on any sub-village statistic would be too narrow"}
+{"t": "2026-08-30T19:50:18", "stage": "p3_unc.village_interval", "production_t": 710.0, "label_only_90": [712.1, 753.7], "anchor_only_90": [621.6, 808.9], "both_90": [649.9, 831.5], "width_label_t": 41.6, "width_anchor_t": 187.4, "width_both_t": 181.6, "dominant": "anchor"}
+{"t": "2026-08-30T19:50:18", "stage": "p3_unc.conformal", "alpha": 0.1, "source": "arXiv 2509.10321", "guarantee": "P(Y in C) >= 1 - alpha - beta", "beta_bounded_from_our_data": false, "why": "our dominant error is the crop label; six-team kappa 0.060 bounds DISAGREEMENT, not error, so beta is not identifiable from anything we hold"}
+{"t": "2026-08-30T19:51:37", "stage": "p3_unc.ensemble", "n_members": 8, "members": ["primary", "with_29oct", "equal_weights", "drop_0606", "drop_0619", "drop_0814", "drop_1013", "drop_1112"], "village_spread_t": 0.0, "village_invariant": true, "why": "the modifier is normalised to area-weighted mean 1.0 within crop, so the village total is anchor x area and the SAR cannot move it -- this is the published limitation of anchor-plus-modifier, measured", "per_farm_sd_median_t_ha": 0.0279, "per_farm_sd_pct_median": 2.21}
+{"t": "2026-08-30T19:51:37", "stage": "p3_unc.morans_i", "I": 0.0833, "z": 7.41, "significant": true, "note": "plots are spatially correlated; an independent-plot interval on any sub-village statistic would be too narrow"}
+{"t": "2026-08-30T19:51:46", "stage": "p3_unc.village_interval", "production_t": 710.0, "label_only_90": [721.2, 761.9], "anchor_only_90": [621.6, 808.9], "both_90": [659.3, 844.1], "width_label_t": 40.7, "width_anchor_t": 187.4, "width_both_t": 184.8, "dominant": "anchor"}
+{"t": "2026-08-30T19:51:46", "stage": "p3_unc.conformal", "alpha": 0.1, "source": "arXiv 2509.10321", "guarantee": "P(Y in C) >= 1 - alpha - beta", "beta_bounded_from_our_data": false, "why": "our dominant error is the crop label; six-team kappa 0.060 bounds DISAGREEMENT, not error, so beta is not identifiable from anything we hold"}
+{"t": "2026-08-30T19:52:40", "stage": "p3_unc.ensemble", "n_members": 8, "members": ["primary", "with_29oct", "equal_weights", "drop_0606", "drop_0619", "drop_0814", "drop_1013", "drop_1112"], "village_spread_t": 0.0, "village_invariant": true, "why": "the modifier is normalised to area-weighted mean 1.0 within crop, so the village total is anchor x area and the SAR cannot move it -- this is the published limitation of anchor-plus-modifier, measured", "per_farm_sd_median_t_ha": 0.0279, "per_farm_sd_pct_median": 2.21}
+{"t": "2026-08-30T19:52:40", "stage": "p3_unc.morans_i", "I": 0.0833, "z": 7.41, "significant": true, "note": "plots are spatially correlated; an independent-plot interval on any sub-village statistic would be too narrow"}
+{"t": "2026-08-30T19:52:40", "stage": "p3_unc.argmax_bias", "argmax_t": 710.0, "posterior_mean_t": 741.5, "bias_t": 31.5, "bias_pct": 4.4, "area_shift_ha": {"Rice": 12.3, "Cotton": -35.1, "Maize": 36.8, "Bajra": 22.5, "Groundnut": -36.5}, "note": "argmax over a diffuse posterior (69.4% of farms have no class above p=0.5) concentrates area into the most-frequently-winning classes; the shipped total is biased LOW by this amount. Reported, not corrected: the deliverable needs one crop label per farm, and a village total that disagreed with the sum of its own farms would be worse than a stated bias."}
+{"t": "2026-08-30T19:52:50", "stage": "p3_unc.village_interval", "production_t": 710.0, "label_only_90": [721.2, 761.9], "anchor_only_90": [621.6, 808.9], "both_90": [659.3, 844.1], "width_label_t": 40.7, "width_anchor_t": 187.4, "width_both_t": 184.8, "dominant": "anchor"}
+{"t": "2026-08-30T19:52:50", "stage": "p3_unc.conformal", "alpha": 0.1, "source": "arXiv 2509.10321", "guarantee": "P(Y in C) >= 1 - alpha - beta", "beta_bounded_from_our_data": false, "why": "our dominant error is the crop label; six-team kappa 0.060 bounds DISAGREEMENT, not error, so beta is not identifiable from anything we hold"}
+{"t": "2026-08-30T19:58:58", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-30T19:58:59", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-30T19:59:01", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-30T19:59:01", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-30T20:00:26", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-30T20:00:26", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 121.3}
+{"t": "2026-08-30T20:00:26", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-30T20:00:26", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-30T20:01:19", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-30T20:01:20", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-30T23:21:39", "stage": "p3_unc.ensemble", "n_members": 8, "members": ["primary", "with_29oct", "equal_weights", "drop_0606", "drop_0619", "drop_0814", "drop_1013", "drop_1112"], "village_spread_t": 0.0, "village_invariant": true, "why": "the modifier is normalised to area-weighted mean 1.0 within crop, so the village total is anchor x area and the SAR cannot move it -- this is the published limitation of anchor-plus-modifier, measured", "per_farm_sd_median_t_ha": 0.0279, "per_farm_sd_pct_median": 2.21}
+{"t": "2026-08-30T23:21:39", "stage": "p3_unc.morans_i", "I": 0.0833, "z": 7.41, "significant": true, "note": "plots are spatially correlated; an independent-plot interval on any sub-village statistic would be too narrow"}
+{"t": "2026-08-30T23:21:39", "stage": "p3_unc.argmax_bias", "argmax_t": 710.0, "posterior_mean_t": 741.5, "bias_t": 31.5, "bias_pct": 4.4, "area_shift_ha": {"Rice": 12.3, "Cotton": -35.1, "Maize": 36.8, "Bajra": 22.5, "Groundnut": -36.5}, "note": "argmax over a diffuse posterior (69.4% of farms have no class above p=0.5) concentrates area into the most-frequently-winning classes; the shipped total is biased LOW by this amount. Reported, not corrected: the deliverable needs one crop label per farm, and a village total that disagreed with the sum of its own farms would be worse than a stated bias."}
+{"t": "2026-08-30T23:21:48", "stage": "p3_unc.village_interval", "production_t": 710.0, "label_only_90": [721.2, 761.9], "anchor_only_90": [520.6, 905.8], "both_90": [597.8, 917.8], "width_label_t": 40.7, "width_anchor_t": 385.2, "width_both_t": 320.0, "dominant": "anchor"}
+{"t": "2026-08-30T23:21:48", "stage": "p3_unc.conformal", "alpha": 0.1, "source": "arXiv 2509.10321", "guarantee": "P(Y in C) >= 1 - alpha - beta", "beta_bounded_from_our_data": false, "why": "our dominant error is the crop label; six-team kappa 0.060 bounds DISAGREEMENT, not error, so beta is not identifiable from anything we hold"}
+{"t": "2026-08-30T23:23:02", "stage": "p3_unc.ensemble", "n_members": 8, "members": ["primary", "with_29oct", "equal_weights", "drop_0606", "drop_0619", "drop_0814", "drop_1013", "drop_1112"], "village_spread_t": 0.0, "village_invariant": true, "why": "the modifier is normalised to area-weighted mean 1.0 within crop, so the village total is anchor x area and the SAR cannot move it -- this is the published limitation of anchor-plus-modifier, measured", "per_farm_sd_median_t_ha": 0.0279, "per_farm_sd_pct_median": 2.21}
+{"t": "2026-08-30T23:23:02", "stage": "p3_unc.morans_i", "I": 0.0833, "z": 7.41, "significant": true, "note": "plots are spatially correlated; an independent-plot interval on any sub-village statistic would be too narrow"}
+{"t": "2026-08-30T23:23:02", "stage": "p3_unc.argmax_bias", "argmax_t": 710.0, "posterior_mean_t": 741.5, "bias_t": 31.5, "bias_pct": 4.4, "area_shift_ha": {"Rice": 12.3, "Cotton": -35.1, "Maize": 36.8, "Bajra": 22.5, "Groundnut": -36.5}, "note": "argmax over a diffuse posterior (69.4% of farms have no class above p=0.5) concentrates area into the most-frequently-winning classes; the shipped total is biased LOW by this amount. Reported, not corrected: the deliverable needs one crop label per farm, and a village total that disagreed with the sum of its own farms would be worse than a stated bias."}
+{"t": "2026-08-30T23:23:02", "stage": "p3_unc.label_external", "totals_t": {"crop_GDHTM": 710.0, "crop_CodingBits": 700.0, "crop_8bit": 703.7, "crop_Megalodon": 695.0, "crop_Orion": 886.8, "crop_DeepThinkers": 722.8, "consensus": 650.3}, "min_t": 650.3, "max_t": 886.8, "range_t": 236.5, "ours_t": 710.0, "control_gdhtm_reproduces_shipped": true, "finding": "our own posterior puts the label term at 40.7 t; five INDEPENDENT labellings of the same farms put it at 236.5 t. Sampling our own posterior measures our confidence, not our accuracy"}
+{"t": "2026-08-30T23:23:11", "stage": "p3_unc.village_interval", "production_t": 710.0, "label_only_90": [721.2, 761.9], "anchor_only_90": [520.6, 905.8], "both_90": [597.8, 917.8], "width_label_t": 40.7, "width_anchor_t": 385.2, "width_both_t": 320.0, "dominant": "anchor"}
+{"t": "2026-08-30T23:23:11", "stage": "p3_unc.conformal", "alpha": 0.1, "source": "arXiv 2509.10321", "guarantee": "P(Y in C) >= 1 - alpha - beta", "beta_bounded_from_our_data": false, "why": "our dominant error is the crop label; six-team kappa 0.060 bounds DISAGREEMENT, not error, so beta is not identifiable from anything we hold"}
+{"t": "2026-08-30T23:24:02", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-30T23:24:02", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 122.3}
+{"t": "2026-08-30T23:24:03", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-30T23:24:03", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-30T23:24:08", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-30T23:24:09", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-30T23:24:11", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-30T23:24:11", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-30T23:24:47", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-30T23:24:47", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 128.6}
+{"t": "2026-08-30T23:24:47", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-30T23:24:47", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-30T23:25:02", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-30T23:25:03", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 136.9}
+{"t": "2026-08-30T23:25:03", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-30T23:25:03", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-30T23:25:27", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-30T23:25:27", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.2}
+{"t": "2026-08-30T23:25:27", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-30T23:25:28", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-30T23:26:01", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-30T23:26:02", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-30T23:26:04", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-30T23:26:04", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-30T23:30:32", "stage": "p3_unc.ensemble", "n_members": 8, "members": ["primary", "with_29oct", "equal_weights", "drop_0606", "drop_0619", "drop_0814", "drop_1013", "drop_1112"], "village_spread_t": 0.0, "village_invariant": true, "why": "the modifier is normalised to area-weighted mean 1.0 within crop, so the village total is anchor x area and the SAR cannot move it -- this is the published limitation of anchor-plus-modifier, measured", "per_farm_sd_median_t_ha": 0.0279, "per_farm_sd_pct_median": 2.21}
+{"t": "2026-08-30T23:30:32", "stage": "p3_unc.morans_i", "I": 0.0833, "z": 7.41, "significant": true, "note": "plots are spatially correlated; an independent-plot interval on any sub-village statistic would be too narrow"}
+{"t": "2026-08-30T23:30:32", "stage": "p3_unc.argmax_bias", "argmax_t": 710.0, "posterior_mean_t": 741.5, "bias_t": 31.5, "bias_pct": 4.4, "area_shift_ha": {"Rice": 12.3, "Cotton": -35.1, "Maize": 36.8, "Bajra": 22.5, "Groundnut": -36.5}, "note": "argmax over a diffuse posterior (69.4% of farms have no class above p=0.5) concentrates area into the most-frequently-winning classes; the shipped total is biased LOW by this amount. Reported, not corrected: the deliverable needs one crop label per farm, and a village total that disagreed with the sum of its own farms would be worse than a stated bias."}
+{"t": "2026-08-30T23:30:32", "stage": "p3_unc.label_external", "totals_t": {"crop_GDHTM": 710.0, "crop_CodingBits": 700.0, "crop_8bit": 703.7, "crop_Megalodon": 695.0, "crop_Orion": 886.8, "crop_DeepThinkers": 722.8, "consensus": 650.3}, "min_t": 650.3, "max_t": 886.8, "range_t": 236.5, "ours_t": 710.0, "control_gdhtm_reproduces_shipped": true, "finding": "our own posterior puts the label term at 40.7 t; five INDEPENDENT labellings of the same farms put it at 236.5 t. Sampling our own posterior measures our confidence, not our accuracy"}
+{"t": "2026-08-30T23:30:41", "stage": "p3_unc.village_interval", "production_t": 710.0, "label_only_90": [721.2, 761.9], "anchor_only_90": [520.6, 905.8], "both_90": [597.8, 917.8], "width_label_t": 40.7, "width_anchor_t": 385.2, "width_both_t": 320.0, "dominant": "anchor"}
+{"t": "2026-08-30T23:30:41", "stage": "p3_unc.conformal", "alpha": 0.1, "source": "arXiv 2509.10321", "guarantee": "P(Y in C) >= 1 - alpha - beta", "beta_bounded_from_our_data": false, "why": "our dominant error is the crop label; six-team kappa 0.060 bounds DISAGREEMENT, not error, so beta is not identifiable from anything we hold"}
+{"t": "2026-08-30T23:30:46", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-30T23:30:47", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-30T23:30:49", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-30T23:30:49", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-30T23:31:54", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-30T23:31:55", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T00:06:32", "stage": "p3_unc.ensemble", "n_members": 8, "members": ["primary", "with_29oct", "equal_weights", "drop_0606", "drop_0619", "drop_0814", "drop_1013", "drop_1112"], "village_spread_t": 0.0, "village_invariant": true, "why": "the modifier is normalised to area-weighted mean 1.0 within crop, so the village total is anchor x area and the MODIFIER cannot move it (the SAR still can, and does, through the crop map that sets the areas) -- this is the published limitation of anchor-plus-modifier, measured", "per_farm_sd_median_t_ha": 0.0279, "per_farm_sd_pct_median": 2.21}
+{"t": "2026-08-31T00:06:33", "stage": "p3_unc.morans_i", "I": 0.0833, "z": 7.41, "significant": true, "note": "plots are spatially correlated; an independent-plot interval on any sub-village statistic would be too narrow"}
+{"t": "2026-08-31T00:06:33", "stage": "p3_unc.argmax_bias", "argmax_t": 710.0, "posterior_mean_t": 741.5, "bias_t": 31.5, "bias_pct": 4.4, "area_shift_ha": {"Rice": 12.3, "Cotton": -35.1, "Maize": 36.8, "Bajra": 22.5, "Groundnut": -36.5}, "note": "argmax over a diffuse posterior (69.4% of farms have no class above p=0.5) concentrates area into the most-frequently-winning classes; the shipped total is biased LOW by this amount. Reported, not corrected: the deliverable needs one crop label per farm, and a village total that disagreed with the sum of its own farms would be worse than a stated bias."}
+{"t": "2026-08-31T00:06:33", "stage": "p3_unc.label_external", "totals_t": {"crop_GDHTM": 710.0, "crop_CodingBits": 700.0, "crop_8bit": 703.7, "crop_Megalodon": 695.0, "crop_Orion": 886.8, "crop_DeepThinkers": 722.8, "consensus": 650.3}, "min_t": 650.3, "max_t": 886.8, "range_t": 236.5, "ours_t": 710.0, "control_gdhtm_reproduces_shipped": true, "finding": "our own posterior puts the label term at 40.7 t; five INDEPENDENT labellings of the same farms put it at 236.5 t. Sampling our own posterior measures our confidence, not our accuracy"}
+{"t": "2026-08-31T00:06:41", "stage": "p3_unc.village_interval", "production_t": 710.0, "label_only_90": [721.2, 761.9], "anchor_only_90": [520.6, 905.8], "both_90": [597.8, 917.8], "width_label_t": 40.7, "width_anchor_t": 385.2, "width_both_t": 320.0, "dominant": "anchor"}
+{"t": "2026-08-31T00:06:41", "stage": "p3_unc.conformal", "alpha": 0.1, "source": "arXiv 2509.10321", "guarantee": "P(Y in C) >= 1 - alpha - beta", "beta_bounded_from_our_data": false, "why": "our dominant error is the crop label; six-team kappa 0.060 bounds DISAGREEMENT, not error, so beta is not identifiable from anything we hold"}
+{"t": "2026-08-31T00:06:43", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-31T00:06:43", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.6}
+{"t": "2026-08-31T00:06:43", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-31T00:06:44", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-31T00:06:48", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T00:06:49", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T00:06:51", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T00:06:51", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T00:21:49", "stage": "p3_salvage.done", "n": 11, "wcm_is_monotone_relabelling": true, "wcm_verdict": "T^2 is a rank-1.000 transform of rise_db: the model was never capable of adding information, independent of whether its physics passed", "safy_proxy_replicates": true, "safy_decay_6day_pct": -36.9, "safy_verdict": "the GAI proxy is real (cotton 0.518/0.522 on two dates 30 days apart) and the kill was availability: the signal loses ~1/3 of its strength in 6 days and no same-day optical exists in the growth window", "salvaged": "the decay rate is the keeper -- it sets the revisit cadence any future X-band GAI assimilation here would need, and justifies weighting dates rather than interpolating between them"}
+{"t": "2026-08-31T00:23:01", "stage": "p3_ds.input", "n_farms": 966, "n_annotators": 6, "teams": ["crop_GDHTM", "crop_CodingBits", "crop_8bit", "crop_Megalodon", "crop_Orion", "crop_DeepThinkers"], "missing_cells": 0}
+{"t": "2026-08-31T00:23:14", "stage": "p3_ds.input", "n_farms": 966, "n_annotators": 6, "teams": ["crop_GDHTM", "crop_CodingBits", "crop_8bit", "crop_Megalodon", "crop_Orion", "crop_DeepThinkers"], "missing_cells": 0}
+{"t": "2026-08-31T00:23:14", "stage": "p3_ds.done", "loglik": -6926.6, "best_on_noncircular_test": "Dawid-Skene", "ds_differs_from_ours_farms": 509, "decision": "REPORTED, NOT ADOPTED. Changing the crop map changes the deliverable and is a deliberate decision, not a side effect of an experiment.", "caveat": "the referee uses ONE witness date and eta2 rewards any grouping that splits NDVI, so a labelling can win it without being more correct"}
+{"t": "2026-08-31T00:25:39", "stage": "p3_ds.input", "n_farms": 966, "n_annotators": 6, "teams": ["crop_GDHTM", "crop_CodingBits", "crop_8bit", "crop_Megalodon", "crop_Orion", "crop_DeepThinkers"], "missing_cells": 0}
+{"t": "2026-08-31T00:25:39", "stage": "p3_ds.done", "loglik": -6926.6, "best_on_noncircular_test": "Dawid-Skene", "referee_is_void": true, "why_void": "the D4 referee is non-circular for OUR labels because ours are SAR-derived; 3 of 6 teams' labels read as optical-informed (residual eta2 0.21-0.26 vs 0.11 for SAR-like), so Dawid-Skene inherits optical information and the test cannot separate 'more correct' from 'saw another sensor'", "slide9_consequence": "the same metric ranks us LAST of six (55.4%) when applied consistently -- it measures information beyond the dominant SAR axis, not label quality. Slide 9 must be reframed or cut", "ds_differs_from_ours_farms": 509, "decision": "REPORTED, NOT ADOPTED. Changing the crop map changes the deliverable and is a deliberate decision, not a side effect of an experiment.", "caveat": "the referee uses ONE witness date and eta2 rewards any grouping that splits NDVI, so a labelling can win it without being more correct"}
+{"t": "2026-08-31T00:26:44", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T00:26:45", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T00:26:47", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T00:26:47", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T00:36:16", "stage": "p3_s1.inventory", "n": 16, "track": "('descending', 34)", "dates": ["2025-05-19", "2025-05-31", "2025-06-12", "2025-06-24", "2025-07-06", "2025-07-18", "2025-07-30", "2025-08-23", "2025-09-04", "2025-09-16", "2025-09-28", "2025-10-10", "2025-10-22", "2025-11-03", "2025-11-15", "2025-11-27"], "note": "single track: no look-side or incidence confound in this series"}
+{"t": "2026-08-31T00:37:42", "stage": "p3_s1.done", "n_farms": 966, "n_dates": 16, "mean_farm_coverage": 0.9876, "growth_window_dates": 9, "capella_growth_window_dates": 3, "why": "Capella contributes 3 acquisitions to Jun-Sep; this contributes 12, cloud-free, on one track. It fills the window that killed SAFY"}
+{"t": "2026-08-31T00:39:23", "stage": "p3_fusion.weights", "n_parts_base": 5, "n_parts_fused": 7, "s1_weight_share": 0.2967, "rule": "redundancy only (1/sum|rho|) -- blind to every witness, same as shipped"}
+{"t": "2026-08-31T00:39:23", "stage": "p3_fusion.done", "rho_shipped_aw": -0.0217, "rho_fused_aw": 0.14, "delta_aw": 0.1617, "delta_aw_control_12nov": -0.0218, "village_total_delta_t": 0.0, "verdict": "does NOT improve consistently -- do not adopt", "decision": "REPORTED, NOT ADOPTED \u2014 adoption is a deliberate call"}
+{"t": "2026-08-31T00:42:04", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T00:42:04", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T00:42:07", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T00:42:07", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T00:56:02", "stage": "p3_clim.done", "years": 9, "track": "('descending', 34)", "window": "('06-01', '09-30')", "z_farm": 1.2, "z_nonfarm_control": 1.39, "z_farm_minus_nonfarm": -0.16, "control_fired": true, "crop_specific_anomaly": false, "interpretation": "the non-farm reference moved too, so the farm anomaly is not crop-specific -- VOID", "bears_on": "adj_2025_26 = 1.00 is held for 4 of 5 crops with the stated reason that no 2025-26 yield statistic exists. This is a village-specific test of that assumption, which no district or state statistic can provide"}
+{"t": "2026-08-31T01:06:42", "stage": "p3_clim.done", "years": 9, "track": "('descending', 34)", "window": "('06-01', '09-30')", "z_farm": 1.2, "z_nonfarm_control": 1.39, "z_farm_minus_nonfarm": -0.16, "control_fired": true, "crop_specific_anomaly": false, "interpretation": "the RAW farm anomaly (z=+1.20) is void -- the non-farm control moved MORE (z=+1.39), so the whole landscape brightened and none of it is crop-specific. The differenced quantity is the one to read, and at z=-0.16 it says the 2025 GROWING SEASON was ordinary at Sokhda. That is a positive result, not a null: adj_2025_26 = 1.00, which we held for 4 of 5 crops as an admitted assumption, is now supported by a village-specific measurement", "october_window_note": "run separately over 01 Oct - 15 Nov, the differenced anomaly is z = -1.62: farms relatively DARKER than the landscape, which brightened (+1.01) on wet soil while the farms did not keep up (+0.48). Growing season ordinary, late season anomalous -- independent nine-year support for the October damage narrative we had been sourcing from ERA5 and a news report. SUGGESTIVE ONLY: n=8 climatology years, 2-4 scenes per year in that window, and 2019 sits at -0.41 against 2025's -0.42, so 2025 is the most negative of nine years but only marginally beyond 2019", "bears_on": "adj_2025_26 = 1.00 is held for 4 of 5 crops with the stated reason that no 2025-26 yield statistic exists. This is a village-specific test of that assumption, which no district or state statistic can provide"}
+{"t": "2026-08-31T01:07:14", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T01:07:15", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T01:07:17", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T01:07:17", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T01:13:36", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-31T01:13:37", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.6}
+{"t": "2026-08-31T01:13:37", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-31T01:13:37", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-31T01:13:38", "stage": "p3_fig", "name": "p3_f5_climatology.png", "kb": 151.8}
+{"t": "2026-08-31T01:14:01", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T01:14:02", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T01:14:04", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T01:14:04", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T01:15:22", "stage": "p3_harvest.done", "n_detected": 951, "n_farms": 966, "kruskal_H": 1.3, "kruskal_p": 0.8620549367927411, "detected_order": ["Maize", "Bajra", "Groundnut", "Rice", "Cotton"], "order_matches_agronomy": false, "top_date": "20251103", "top_date_share": 0.207, "verdict": "FAILED a control \u2014 not reported as support for anything", "confound_handled": "detection runs on the plot series MINUS the per-date village median, so the 26-28 Oct rain cannot register as a synchronised harvest"}
+{"t": "2026-08-31T01:16:28", "stage": "p3_harvest.done", "n_detected": 951, "n_farms": 966, "kruskal_H": 1.3, "kruskal_p": 0.8620549367927411, "detected_order": ["Maize", "Bajra", "Groundnut", "Rice", "Cotton"], "order_matches_agronomy": false, "top_date": "20251103", "top_date_share": 0.207, "verdict": "FAILED a control \u2014 not reported as support for anything", "confound_handled": "detection runs on the plot series MINUS the per-date village median, so the 26-28 Oct rain cannot register as a synchronised harvest", "why_it_failed": "not plot size alone: restricting to the largest plots does not recover separation (top 50% p=0.93, top 25% p=0.32, top 10% p=0.49) and the detected crop ORDER reshuffles randomly between subsets, which is the signature of noise rather than of a weak real signal. Median parcel is 28 Sentinel-1 pixels; a steepest-single-drop estimator on 16 noisy points at that size carries no timing information", "what_this_does_NOT_show": "a failed test is not evidence against the hypothesis. This does NOT refute the epistemic-object split; it means we could not test it this way. The split still rests on published crop calendars, which is a weaker footing than we would like and is now recorded as such in WRITEUP section 8"}
+{"t": "2026-08-31T01:17:26", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T01:17:26", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T01:17:29", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T01:17:29", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T02:36:47", "stage": "p3_reprctl.year", "year": 2025, "parcels_db": -14.318, "sokhda_wc_db": -14.362, "neighbour_wc_db": -15.369, "offset_parcels_db": 1.051, "offset_like_for_like_db": 1.007, "definition_effect_db": 0.044}
+{"t": "2026-08-31T02:37:38", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T02:37:39", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T02:38:09", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T02:38:09", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T08:17:47", "stage": "p3_spatial", "n": 966, "moran_raw": 0.07268357535730942, "moran_clean": 0.062391617441658234, "landscape_frac": 0.08519130530747124, "farm_frac": 0.9604080704241549, "village_total_t": 710.0278792961165}
+{"t": "2026-08-31T08:18:07", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T08:18:08", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T08:18:10", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T08:18:10", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T08:18:42", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-31T08:18:42", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.6}
+{"t": "2026-08-31T08:18:42", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-31T08:18:43", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-31T08:18:43", "stage": "p3_fig", "name": "p3_f5_climatology.png", "kb": 151.8}
+{"t": "2026-08-31T08:18:43", "stage": "p3_fig", "name": "p3_f6_spatial.png", "kb": 127.2}
+{"t": "2026-08-31T08:19:28", "stage": "p3_spatial", "n": 966, "moran_raw": 0.07268357535730942, "moran_clean": 0.062391617441658234, "landscape_frac": 0.08519130530747124, "farm_frac": 0.9604080704241549, "village_total_t": 710.0278792961165}
+{"t": "2026-08-31T08:19:29", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-31T08:19:30", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.6}
+{"t": "2026-08-31T08:19:30", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-31T08:19:30", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-31T08:19:30", "stage": "p3_fig", "name": "p3_f5_climatology.png", "kb": 151.8}
+{"t": "2026-08-31T08:19:31", "stage": "p3_fig", "name": "p3_f6_spatial.png", "kb": 128.5}
+{"t": "2026-08-31T08:22:31", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T08:22:32", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T08:22:34", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T08:22:34", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T08:28:23", "stage": "p3_voi", "harness_rho": 1.0, "c1_pass": true, "perm_rho": 0.312, "greedy_2date_rho": NaN, "greedy_1date_rho": NaN}
+{"t": "2026-08-31T08:29:22", "stage": "p3_voi", "harness_rho": 1.0, "c1_pass": true, "perm_rho": 0.312, "greedy_2date_rho": 0.8735, "greedy_1date_rho": 0.8571}
+{"t": "2026-08-31T08:30:15", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-31T08:30:16", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.6}
+{"t": "2026-08-31T08:30:16", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-31T08:30:16", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-31T08:30:16", "stage": "p3_fig", "name": "p3_f5_climatology.png", "kb": 151.8}
+{"t": "2026-08-31T08:30:16", "stage": "p3_fig", "name": "p3_f6_spatial.png", "kb": 128.5}
+{"t": "2026-08-31T08:30:17", "stage": "p3_fig", "name": "p3_f7_voi.png", "kb": 119.0}
+{"t": "2026-08-31T08:30:48", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-31T08:30:48", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.6}
+{"t": "2026-08-31T08:30:49", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-31T08:30:49", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-31T08:30:49", "stage": "p3_fig", "name": "p3_f5_climatology.png", "kb": 151.8}
+{"t": "2026-08-31T08:30:49", "stage": "p3_fig", "name": "p3_f6_spatial.png", "kb": 128.5}
+{"t": "2026-08-31T08:30:49", "stage": "p3_fig", "name": "p3_f7_voi.png", "kb": 119.0}
+{"t": "2026-08-31T08:31:11", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-31T08:31:11", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.6}
+{"t": "2026-08-31T08:31:11", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-31T08:31:11", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-31T08:31:11", "stage": "p3_fig", "name": "p3_f5_climatology.png", "kb": 151.8}
+{"t": "2026-08-31T08:31:12", "stage": "p3_fig", "name": "p3_f6_spatial.png", "kb": 128.5}
+{"t": "2026-08-31T08:31:12", "stage": "p3_fig", "name": "p3_f7_voi.png", "kb": 139.5}
+{"t": "2026-08-31T08:31:30", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-31T08:31:30", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.6}
+{"t": "2026-08-31T08:31:30", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-31T08:31:31", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-31T08:31:31", "stage": "p3_fig", "name": "p3_f5_climatology.png", "kb": 151.8}
+{"t": "2026-08-31T08:31:31", "stage": "p3_fig", "name": "p3_f6_spatial.png", "kb": 128.5}
+{"t": "2026-08-31T08:31:31", "stage": "p3_fig", "name": "p3_f7_voi.png", "kb": 144.0}
+{"t": "2026-08-31T08:33:14", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T08:33:15", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T08:33:18", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T08:33:18", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T09:43:50", "stage": "p3_speckle", "n": 966, "k": 97, "c1_pass": true, "retention_nominal": 0.6864, "chance_floor": 0.1004, "solid": 39, "weak": 30}
+{"t": "2026-08-31T09:44:34", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-31T09:44:34", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.6}
+{"t": "2026-08-31T09:44:34", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-31T09:44:34", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-31T09:44:35", "stage": "p3_fig", "name": "p3_f5_climatology.png", "kb": 151.8}
+{"t": "2026-08-31T09:44:35", "stage": "p3_fig", "name": "p3_f6_spatial.png", "kb": 128.5}
+{"t": "2026-08-31T09:44:35", "stage": "p3_fig", "name": "p3_f7_voi.png", "kb": 144.0}
+{"t": "2026-08-31T09:44:36", "stage": "p3_fig", "name": "p3_f8_speckle.png", "kb": 161.7}
+{"t": "2026-08-31T09:45:04", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-31T09:45:05", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.6}
+{"t": "2026-08-31T09:45:05", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-31T09:45:05", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-31T09:45:05", "stage": "p3_fig", "name": "p3_f5_climatology.png", "kb": 151.8}
+{"t": "2026-08-31T09:45:06", "stage": "p3_fig", "name": "p3_f6_spatial.png", "kb": 128.5}
+{"t": "2026-08-31T09:45:06", "stage": "p3_fig", "name": "p3_f7_voi.png", "kb": 144.0}
+{"t": "2026-08-31T09:45:06", "stage": "p3_fig", "name": "p3_f8_speckle.png", "kb": 170.6}
+{"t": "2026-08-31T09:47:02", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T09:47:03", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T09:47:05", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T09:47:05", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T10:02:16", "stage": "p3_edge.done", "n_farms": 966, "attention_k": 97, "chance_floor": 0.1004, "median_npix_full": 69.5, "median_ring_frac": 0.4481, "farms_no_interior": 75, "farms_all_touched_rung": 10, "c1_max_db_err": 0.0, "c1_max_cv_err": 0.0, "c1_rho": 1.0, "c2_max_recovery_err_db": 0.0, "c2_max_recovery_err_db_float32": 0.0, "med_abs_level_diff_ring_db": 0.4837, "med_abs_level_diff_random_db": 0.3142, "rho_core_vs_shipped": 0.8528, "rho_random_vs_shipped": 0.8574, "retention_core": 0.6392, "retention_random": 0.6804, "cv_change_core_pct": -4.8702, "cv_change_random_pct": -1.0354, "rho_index_vs_ring_frac": 0.0201}
+{"t": "2026-08-31T10:04:24", "stage": "p3_edge.done", "n_farms": 966, "attention_k": 97, "chance_floor": 0.1004, "median_npix_full": 69.5, "median_ring_frac": 0.4481, "farms_no_interior": 75, "farms_all_touched_rung": 10, "c1_max_db_err": 0.0, "c1_max_cv_err": 0.0, "c1_rho": 1.0, "c2_max_recovery_err_db": 0.0, "c2_max_recovery_err_db_float32": 0.0, "med_abs_level_diff_ring_db": 0.4837, "med_abs_level_diff_random_db": 0.3142, "rho_core_vs_shipped": 0.8528, "rho_random_vs_shipped": 0.8574, "retention_core": 0.6392, "retention_random": 0.6804, "cv_change_core_pct": -4.8702, "cv_change_random_pct": -1.0354, "rho_index_vs_ring_frac": 0.0201, "rho_ring_frac_vs_npix": -0.9806, "rho_index_vs_npix": -0.0171}
+{"t": "2026-08-31T10:06:22", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T10:06:23", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T10:06:25", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T10:06:25", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}
+{"t": "2026-08-31T10:21:06", "stage": "p3_fig", "name": "p3_f1_deliverable.png", "kb": 109.6}
+{"t": "2026-08-31T10:21:07", "stage": "p3_fig", "name": "p3_f2_uncertainty.png", "kb": 142.6}
+{"t": "2026-08-31T10:21:07", "stage": "p3_fig", "name": "p3_f3_d1.png", "kb": 59.8}
+{"t": "2026-08-31T10:21:07", "stage": "p3_fig", "name": "p3_f4_witness.png", "kb": 103.9}
+{"t": "2026-08-31T10:21:07", "stage": "p3_fig", "name": "p3_f5_climatology.png", "kb": 151.8}
+{"t": "2026-08-31T10:21:08", "stage": "p3_fig", "name": "p3_f6_spatial.png", "kb": 128.5}
+{"t": "2026-08-31T10:21:08", "stage": "p3_fig", "name": "p3_f7_voi.png", "kb": 144.0}
+{"t": "2026-08-31T10:21:08", "stage": "p3_fig", "name": "p3_f8_speckle.png", "kb": 170.6}
+{"t": "2026-08-31T10:21:09", "stage": "p3_fig", "name": "p3_f9_edge.png", "kb": 159.4}
+{"t": "2026-08-31T10:21:43", "stage": "p1_prep.incidence", "date": "20250606", "ours_mean": 35.2402, "vendor_center": 35.2441, "delta_deg": -0.0039, "aoi_min": 35.046, "aoi_max": 35.436}
+{"t": "2026-08-31T10:21:44", "stage": "p1_prep.slant", "date": "20250606", "win": "8836x4682", "sf": 0.0021218646124560583, "beta0_db_med": -18.9}
+{"t": "2026-08-31T10:21:46", "stage": "p3_checks.d4", "eta_raw": 0.2025, "eta_residual": 0.1122, "fraction_surviving": 0.5542, "p_raw": 5.7139518938459905e-36, "p_residual": 1.0500516817377695e-21, "orion_tier2_comparison": {"raw": 0.19, "residual": 0.002}}
+{"t": "2026-08-31T10:21:46", "stage": "p3_checks.done", "n": 19, "passed": 19, "failed": 0, "failing": []}

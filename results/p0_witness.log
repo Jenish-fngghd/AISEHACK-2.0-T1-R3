@@ -1,0 +1,39 @@
+C:\Users\sorat\AppData\Local\Programs\Python\Python312\Lib\site-packages\pyogrio\raw.py:200: RuntimeWarning: C:\Users\sorat\Downloads\AISEHack_R2_SAR_Crop\AISEHACK-2.0-T1-R3\anrf-aise-hack-2-0-round-3-sar-crop-yield-forecasting\Farm_boundaries_shp\Farm_boundaries_shp\Sokhda_Farms.shp contains polygon(s) with rings with invalid winding order. Autocorrecting them, but that shapefile should be corrected using ogr2ogr for example.
+  return ogr_read(
+[2026-08-30T12:39:16] p0_witness.start: farms=966 bbox=[np.float64(73.13306), np.float64(22.40831), np.float64(73.18026), np.float64(22.44238)]
+[2026-08-30T12:39:17] p0_witness.s1_scenes: relative_orbit=34 n=18
+  S1 20250507  done  (2 cols)
+  S1 20250519  done  (4 cols)
+  S1 20250531  done  (6 cols)
+  S1 20250612  done  (8 cols)
+  S1 20250624  done  (10 cols)
+  S1 20250706  done  (12 cols)
+  S1 20250718  done  (14 cols)
+  S1 20250730  done  (16 cols)
+  S1 20250823  done  (18 cols)
+  S1 20250904  done  (20 cols)
+  S1 20250916  done  (22 cols)
+  S1 20250928  done  (24 cols)
+  S1 20251010  done  (26 cols)
+  S1 20251022  done  (28 cols)
+  S1 20251103  done  (30 cols)
+  S1 20251115  done  (32 cols)
+  S1 20251127  done  (34 cols)
+  S1 20251209  done  (36 cols)
+[2026-08-30T12:41:58] p0_witness.s1_done: cols=36
+  S2 2025-05-01  n=956  cloud=0.369%  S2C_MSIL2A_20250501T053701_R005_T43QCE_20250501T102217
+  S2 2025-05-11  n=956  cloud=19.480%  S2C_MSIL2A_20250511T053701_R005_T43QCE_20250511T091913
+  S2 2025-10-13  n=956  cloud=0.166%  S2B_MSIL2A_20251013T053659_R005_T43QCE_20251013T081845
+  S2 2025-10-18  n=956  cloud=0.743%  S2C_MSIL2A_20251018T053841_R005_T43QCE_20251018T085916
+  S2 2025-10-23  n=956  cloud=16.786%  S2B_MSIL2A_20251023T053809_R005_T43QCE_20251023T075858
+  S2 2025-11-07  n=956  cloud=0.001%  S2C_MSIL2A_20251107T054041_R005_T43QCE_20251107T082511
+  S2 2025-11-09  n=956  cloud=0.001%  S2A_MSIL2A_20251109T054251_R005_T43QCE_20251109T090809
+  S2 2025-11-12  n=956  cloud=0.001%  S2B_MSIL2A_20251112T053959_R005_T43QCE_20251112T074332
+  S2 2025-11-17  n=956  cloud=0.139%  S2C_MSIL2A_20251117T054131_R005_T43QCE_20251117T093015
+  S2 2025-11-22  n=956  cloud=0.001%  S2B_MSIL2A_20251122T054039_R005_T43QCE_20251122T073551
+  S2 2025-11-27  n=956  cloud=11.249%  S2C_MSIL2A_20251127T054211_R005_T43QCE_20251127T104409
+  S2 2025-11-29  n=956  cloud=9.610%  S2A_MSIL2A_20251129T054251_R005_T43QCE_20251129T085708
+  S2 2025-12-02  n=956  cloud=0.284%  S2B_MSIL2A_20251202T054109_R005_T43QCE_20251202T073232
+  S2 2025-12-07  n=956  cloud=0.655%  S2C_MSIL2A_20251207T054231_R005_T43QCE_20251207T092711
+  S2 2025-12-12  n=956  cloud=0.001%  S2B_MSIL2A_20251212T054139_R005_T43QCE_20251212T073145
+[2026-08-30T12:44:24] p0_witness.s2_done: dates=15
