@@ -17,3 +17,10 @@ gee_oauth.json
 
 __pycache__/
 *.pyc
+
+# Markdown working notes stay out of the submitted repository: the writeup, the deck
+# outline, the kickoff brief and the internal research log are drafting material, and
+# the check-in is submitted as MIDNIGHT_CHECKIN.pdf / .docx instead. Those two are
+# deliberately NOT ignored -- they are the documentation the jury receives.
+*.md
+*.html
