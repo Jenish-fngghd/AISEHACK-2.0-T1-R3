@@ -10,7 +10,7 @@ results/cache/
 ground_truth_vf12.csv
 .kdss_token
 
-# Credentials live in ~/.config/aisehack/, outside the repo, and are read at runtime.
+
 *.key
 *.token
 gee_oauth.json

@@ -1,0 +1,130 @@
+<meta charset="utf-8">
+<h1>Three objects in one column &mdash; SAR-anchored kharif yield forecasting for Sokhda</h1>
+<p><b>AISEHack 2.0 &middot; Goa Grand Finale &middot; Midnight Check-in</b><br>Team T1 &middot; 966 farm plots &middot; 447.5 ha &middot; Sokhda, Vadodara, Gujarat &middot; kharif 2025</p>
+<table style="border-collapse:collapse;width:100%"><tr><td style="border:1px solid #999;padding:4pt;width:22%"><b>Domain</b></td><td style="border:1px solid #999;padding:4pt">Remote Sensing - Precision Agriculture / Crop Yield Forecasting</td></tr><tr><td style="border:1px solid #999;padding:4pt;width:22%"><b>Primary data</b></td><td style="border:1px solid #999;padding:4pt"><b>6 × Capella X-band HH SLC</b> (6 Jun · 19 Jun · 14 Aug · 13 Oct · 29 Oct · 12 Nov 2025) + 966-parcel cadastral boundaries</td></tr><tr><td style="border:1px solid #999;padding:4pt;width:22%"><b>Ancillary</b></td><td style="border:1px solid #999;padding:4pt">Sentinel-1 GRD/RTC via Microsoft Planetary Computer (anonymous STAC, 2016-2025) · Sentinel-2 L2A witness · ERA5-Land · MOAFW Crop Weather Watch + Gujarat DES · USDA FAS MY2025/26</td></tr><tr><td style="border:1px solid #999;padding:4pt;width:22%"><b>Ground truth</b></td><td style="border:1px solid #999;padding:4pt"><b>None exists for this village.</b> PMFBY village CCE yields are gated behind an officer login; no plot-level harvest record is public. Every validation below is an <i>external-consistency</i> test and is labelled as one.</td></tr></table>
+<h2>1 &middot; Proposed strategy &amp; technical novelty</h2>
+<p><b>Pipeline.</b></p>
+<table style="border-collapse:collapse;width:100%"><tr><td style="border:1px solid #999;padding:4pt;vertical-align:top"><b>1 · Radiometry</b><br>β⁰ = SF²·|z|², terrain-flattened to γ⁰. Squared scale factor, verified against the vendor's own NESZ.</td><td style="border:1px solid #999;padding:4pt;vertical-align:top"><b>2 · Parcel series</b><br>Per-plot γ⁰, 966 polygons × 6 dates. Negative-buffer ladder −5/−2/0 m, boundary-pixel audit.</td><td style="border:1px solid #999;padding:4pt;vertical-align:top"><b>3 · Health index</b><br>Five named parts: level, growth, uniformity, persistence, senescence. Fixed weights, nothing fitted.</td></tr><tr><td style="border:1px solid #999;padding:4pt;vertical-align:top"><b>4 · Crop map</b><br>Trajectory-shape labels, 5 classes. The <i>only</i> place the SAR touches the village total.</td><td style="border:1px solid #999;padding:4pt;vertical-align:top"><b>5 · Anchor × modifier</b><br>Level from a published statistic, ordering from the radar, conservation constraint applied.</td><td style="border:1px solid #999;padding:4pt;vertical-align:top"><b>6 · Product</b><br>Σ(yield × area) per plot, per 500 m zone, per crop, every row typed by epistemic object.</td></tr></table>
+<p><b>Cross-cutting:</b> ERA5-Land and MOAFW enter as <i>gates and corrections</i>, never as predictors: 29 Oct is excluded from level features on a measured wind/rain confound, and cotton completion is dated to the MOAFW report of 10 Nov 2025. A nine-year Sentinel-1 climatology tests the one assumption the Capella stack cannot reach. A 19-check defensibility harness, thresholds fixed <i>before</i> each run, wraps the whole pipeline</p>
+<h3>AI methodology, and why it is deliberately not a regressor</h3>
+  <p>There is no harvest record for Sokhda, so a supervised yield regressor would be fitted against labels we invented ourselves, and its R² would measure our own consistency rather than the crop. The pipeline is instead an <b>unsupervised, physically parameterised feature construction</b> (five named backscatter descriptors, fixed weights, nothing fitted to an outcome) driving a <b>dasymetric anchor-plus-modifier estimator under a hard conservation constraint</b>, wrapped in an adversarial control harness. Every model with more free parameters than observations was killed on identifiability, not on taste (<a href="#s4">§4, Technical challenges &amp; pivots</a>).</p>
+
+  <h3>Novel contribution: four twists, each with a control that could have fired</h3>
+  <p><b id="n1">N1 · Epistemic typing of the output column.</b> Forecast, measurement and reconstruction are three different objects, and one undifferentiated tonnage silently mixes them. We type every row against the crop calendar and the acquisition window: <span class="hl">cotton (43% of area) is a genuine <b>forecast</b></span>, picking runs to January and ≈72% was still on the plant at our last scene; <span class="hl">groundnut (31%) is a near-complete <b>measurement</b></span>, its yield determined at physiological maturity in late October, inside our window; rice, maize and bajra (26%) are <b>retrospective reconstructions</b>, their seasons closed before the imagery. The forecast horizon is not uniform across the village, and we say where it is short and where it is long.</p>
+
+  <p><b id="n2">N2 · A conservation constraint that separates level from ordering by construction</b>, the brief's "plausibility constraint", enforced structurally rather than penalised in a loss:</p><table style="border-collapse:collapse;width:100%"><tr><td style="border:1px solid #333;padding:6pt;background:#f4f6f7">
+    <div class="eq">yield[plot] = <b>anchor</b>(crop) × <b>modifier</b>[plot],&nbsp; with&nbsp; area-weighted mean(modifier) ≡ 1.0 <i>within each crop</i></div>
+    <div style="text-align:center;font-size:6.8pt">⇒ village total = Σ<sub>c</sub> anchor<sub>c</sub> × area<sub>c</sub>, <b>mathematically invariant to the imagery</b>, asserted to 3.3×10⁻¹⁶ across an 8-member leave-one-date-out ensemble.</div>
+ </td></tr></table>
+  
+  <p>The gain is auditability: the radar cannot smuggle a level in, so <b>the imagery's contribution reduces to two statements, the ordering of plots within a crop and which crop each plot is</b>, and each can be attacked separately. What we <i>inject</i> (the anchor; a literature prior YIELD_SPREAD = 0.30) is published rather than buried.</p>
+
+  <p><b id="n3">N3 · A nine-year radar climatology, relative level without a label.</b> Absolute level needs a label and we have none; <i>relative</i> level needs a history, and Sentinel-1 has nine years over this village <b>on a single track</b>, so the look-side and incidence mixing that normally dominates multi-year SAR comparison is absent (checked, not assumed: the Oct-Nov window <i>is</i> mixed and was dropped). It tests our own assumption that 2025 was an ordinary year. Measured twice, farm pixels against non-farm pixels in the same AOI, the raw farm anomaly is <b>z = +1.20</b>, reading as "bright year, good season"; but the <b>non-farm control moved further, +1.39</b>, so the difference is <b>−0.16</b>. <span class="hl">The control reversed the naive reading.</span></p>
+
+  <p><b id="n4">N4 · Adversarial self-audit as a deliverable.</b> The forecast was <b>frozen</b>, and only then did we build ten further approaches against kill criteria written down in advance. Six died: the Water Cloud Model on identifiability, SAFY on optical availability, C-band fusion on a held-out date, and a label-fusion validation scheme voided by a provenance control we had built to catch exactly that. None of the survivors changed a shipped number, which is the point: a frozen number cannot be flattered by a test.</p>
+
+  <h3>Success metrics: what would falsify us, given that no yield label exists</h3>
+  <table>
+    <tr><th style="width:30%">Test, threshold fixed before the run</th><th class="n" style="width:13%">Result</th><th>What a failure would have meant</th></tr>
+    <tr><td><b>D1 backcast consistency</b> against our own Round 2, per crop, bands pre-registered</td><td class="n"><b>6 / 6 pass</b></td><td>Crops harvested before R2's last date must reproduce (rice ×1.04, maize ×1.00); a still-picking crop must rise (cotton ×1.84). No other team has a Round 2 to check against.</td></tr>
+    <tr><td><b>Physical admissibility</b>, darkest content vs the vendor's declared noise floor</td><td class="n"><b>0 / 6 below</b></td><td>In σ⁰ all six scenes sit <i>under</i> the sensor's own noise, which is impossible. The residual's sign is a harder test than its magnitude, and it is what proved the SF² convention.</td></tr>
+    <tr><td><b>Speckle re-flight</b>, 500 replicates, Gamma(k = npix·F), index rebuilt by the shipped code</td><td class="n"><b>0.686</b><br>ρ = 0.855</td><td>Retention of the 97-farm attention list against a <b>chance floor of 0.10</b>; below it, per-farm advice would be noise. 39 farms return in ≥80% of re-flights and 30 in under half, and we ship that column.</td></tr>
+    <tr><td><b>Field-scale attribution</b>, variogram, Moran's I, core-only rebuild with a matched-N random null</td><td class="n"><b>96%</b><br>ρ<sub>size</sub> = −0.017</td><td>The median parcel is 45% boundary pixel; if the ranking were the neighbourhood or the outline, a per-farm list would be indefensible. And no parcel-size bias across a 40× area spread, the fairness property a smallholder village needs.</td></tr>
+    <tr><td><b>Value of information</b>, leave-one-date-out and greedy forward selection</td><td class="n">0.857 → <b>0.9993</b></td><td>It shrank our own claim: a peak-canopy index with temporal corrections, not a season-long trajectory model. It also justifies Round 3's two extra scenes, since senescence is a slope and does not exist until a second late date arrives.</td></tr>
+    <tr><td>Witness transfer (same-day Sentinel-2, both spatial halves) · regression suite · full harness</td><td class="n">ρ .52/.69<br><b>12/12 · 19/19</b></td><td>An independent instrument agreeing on ordering within crop, reported per half so a one-sided result is visible; and every historical failure mode of this pipeline pinned by a test that fails loudly.</td></tr>
+  </table>
+
+  <h2 id="s2">2 · Ancillary grounding &amp; assumptions</h2>
+  <div class="cols">
+    <div>
+      <h3 style="margin-top:.4mm">Stated assumptions</h3>
+      <ul>
+        <li><b>The anchor is a published statistic</b>, not a measurement of ours. It is the single largest uncertainty at <b>385.2 t</b>, and we say so rather than absorbing it into a tighter interval.</li>
+        <li><b>YIELD_SPREAD = 0.30</b> is a literature prior on within-village yield CV: it sets how much spread exists, and it is chosen, not fitted.</li>
+        <li><b>adj_2025-26 = 1.00</b> for four of five crops, an ordinary year, because no kharif 2025-26 statistic exists. This is the assumption <a href="#n3">N3</a> was built to test.</li>
+        <li><b>Crop calendars</b> (monsoon-onset sowing, groundnut maturity ≈135 DAS, cotton pickings 35/50/15%) come from MOAFW and published agronomy; <a href="#s5">§5</a> flags that we could not test them internally.</li>
+        <li><b>Cotton is reported as lint</b> (≈34% of seed cotton), which is why 0.73 t/ha sits below the cereals. It leads on area, not on tonnage.</li>
+      </ul>
+    
+    <div>
+      <h3 style="margin-top:.4mm">Known data-quality issues, and what we did</h3>
+      <ul>
+        <li><b>Calibration.</b> Round 2 shipped β⁰ = SF·|z|²; power carries the square of an amplitude scale factor. <span class="hl">We were wrong for two rounds and we are the ones who found it</span>, and three independent confirmations agree.</li>
+        <li><b>29 October sits inside a disaster.</b> 14.1 m/s wind (vs 6.7-9.6 elsewhere), 81.2 mm of rain over 26-28 Oct, soil moisture 0.133→0.372, overpass on the wet peak. Round 2 referenced every date to in-scene water, which would have injected ≈2.9 dB of wind roughening in the direction that reads as canopy change. Excluded from level features.</li>
+        <li><b>The wetness term is canopy-dependent</b>, brightening ordered by cover, cotton +0.49 dB to bare bajra +2.60 dB, so no scalar removes it. Hence exclusion rather than correction.</li>
+        <li><b>Look side.</b> 29 Oct is the only right-looking scene; pre-registered kill ratio ≥1.5×, measured <b>0.944</b>. Dead, and water, physically incapable of an orientation effect, spread more than built-up on the same pair.</li>
+        <li><b>Selection bias, caught.</b> A clean 3.4 dB "drop" on both new dates was <b>+2.59 dB artefact</b> of picking stable targets in-sample. Rebuilt out-of-sample on four folds.</li>
+        <li><b>Tiny parcels.</b> Median 69 pixels, 159 farms under 20 on the peak date; speckle alone puts ≈12% on a median farm's brightness before any modelling question. Propagated, not ignored.</li>
+      </ul>
+    
+  
+  
+
+
+
+  <h2 id="s3" style="margin-top:0">3 · Preliminary salient results</h2>
+  
+    <img src="results/figures/checkin_composite.png" width="640" alt="Four-panel result composite">
+    <p style="font-size:8pt"><i><b>A</b> the deliverable, coloured by epistemic object: 710.0 t over 447.5 ha (1.587 t/ha); solid vs hatched is final forecast against yield already in hand, and only cotton carries a large gap, because only cotton is still being picked. &nbsp;<b>B</b> <b>D1, the consistency check no other team can run</b>: Round 2's yield-to-date against Round 3's final forecast, per crop, against ratio bands written down before the forecast existed. Crops harvested before R2's last date reproduce (×1.04, ×1.00), cotton rises as a final must (×1.84), bajra falls because we corrected its anchor. &nbsp;<b>C</b> value of information per acquisition: one peak-canopy scene gets ρ = 0.857 of the shipped ordering, the fourth closes the gap; withhold 14 August and 77 of the 97 named farms change. &nbsp;<b>D</b> the re-flight test, same crop, sensor and day, a different realisation of speckle: 69% of the list survives against a 10% chance floor, and a third of the names do not.</i></p>
+  
+
+  <div class="cols">
+    <div>
+      <table style="margin-top:0">
+        <tr><th>Crop</th><th class="n">Area ha</th><th class="n">t/ha</th><th class="n">Prod. t</th><th>Object</th></tr>
+        <tr><td>Cotton <span class="muted">(lint)</span></td><td class="n">193.4</td><td class="n">0.730</td><td class="n">141.2</td><td><b>forecast</b></td></tr>
+        <tr><td>Groundnut</td><td class="n">137.7</td><td class="n">2.514</td><td class="n">346.1</td><td><b>measurement</b></td></tr>
+        <tr><td>Rice</td><td class="n">47.4</td><td class="n">1.690</td><td class="n">80.2</td><td>reconstruction</td></tr>
+        <tr><td>Bajra</td><td class="n">42.3</td><td class="n">1.910</td><td class="n">80.8</td><td>reconstruction</td></tr>
+        <tr><td>Maize</td><td class="n">26.7</td><td class="n">2.312</td><td class="n">61.8</td><td>reconstruction</td></tr>
+        <tr class="tot"><td>All · 966 plots</td><td class="n">447.5</td><td class="n">1.587</td><td class="n">710.0</td><td>three objects</td></tr>
+      </table>
+      <p><b>Sub-village product.</b> A fixed 500 m grid gives <b>46 zones</b> of ≥5 farms spanning health indices <b>36.6 to 76.3</b>, 39.7 points of variation hidden behind the single village row, each zone carrying its own uncertainty column.</p>
+    
+    <div>
+      <h3 style="margin-top:0">Validation note: what our held-out split actually is</h3>
+      <p>No held-out <i>yields</i> exist for Sokhda at any date, so a predicted-vs-actual scatter would be a fabrication. We hold out the two things we can. <b>Space:</b> weights, rank transfer and the Sentinel-2 witness relationship refitted in one spatial half and applied to the other, <b>7 / 9 pass</b>, the two failures reported rather than deleted. <b>Time:</b> leave-one-date-out, whose control case has a known answer and aborts the run if it is not returned exactly.</p>
+      <p>Uncertainty is reported as four separate terms, because conflating them is how a confidence number stops being one: sampling <b>5.8</b> health pts/farm · structural <b>0.028 t/ha</b> per farm and <b>0.0 t</b> at village level (zero <i>by construction</i>, <a href="#n2">N2</a>) · crop label, Monte Carlo over our own posterior, <b>40.7 t</b> · <b>anchor 385.2 t</b>, which dominates every other term combined. Label and anchor together put the village total in <b>[516, 904] t</b>. We publish no confidence level: conformal coverage is 1−α−β, and with no ground truth β is the same unknown wearing a different hat.</p>
+    
+  
+
+  <h2 id="s4">4 · Technical challenges &amp; pivots</h2>
+  <table>
+    <tr><th style="width:20%">Roadblock</th><th style="width:14%">Verdict</th><th>Why it underperformed, and how we adapted</th></tr>
+    <tr><td><b>Water Cloud Model</b>, the obvious route to an absolute retrieval</td><td><b>killed, unidentifiable</b></td><td>More free parameters than observations. Retried after the freeze and shown incapable of contributing, not merely unlucky. It left a one-line identifiability test we now apply to any candidate model.</td></tr>
+    <tr><td><b>SAFY</b> growth model, written almost verbatim for "calibrate without in-situ data"</td><td><b>killed on availability</b></td><td>γ⁰ <i>does</i> rank canopy within crop against same-day NDVI (ρ = 0.52 cotton), but only 2 of 6 dates have a same-day optical partner and neither is in the Jun-Sep window SAFY integrates. You cannot calibrate a growth model on a proxy you can only validate after the growth is over.</td></tr>
+    <tr><td><b>Dawid-Skene label fusion</b>, run <b>purely as a validation cross-check</b> on our crop map, never as an input to the deliverable</td><td><b>won, then voided</b></td><td>It beat every single-source label set it was compared against, but the provenance control we had built to catch exactly this could not separate <i>a more correct label</i> from <i>a label that had seen another instrument</i>. The win is unattributable, so it was discarded on our own control and the shipped crop map is unchanged by it.</td></tr>
+    <tr><td><b>X-band + Sentinel-1 C-band fusion</b></td><td><b>real information, rejected</b></td><td>Better on the date we looked at, worse on the held-out one. The held-out date is the one that counts.</td></tr>
+    <tr><td><b>Our own Round 2 results</b></td><td><b>two self-corrections</b></td><td>The calibration convention, β⁰ = SF²·|z|² rather than SF·|z|²; and the bajra anchor, which we had set too high and revised down by a factor of 0.71. Both ran against us, and both are visible in the D1 panel above.</td></tr>
+    <tr><td><b>Dead Earth Engine credential</b></td><td><b>routed around</b></td><td>Microsoft's Planetary Computer serves Sentinel-1 RTC through an <b>anonymous</b> STAC endpoint, no account and no key. It replaced the blocked path and made three post-freeze experiments possible, the climatology among them.</td></tr>
+  </table>
+
+  <h2 id="s5">5 · Final sprint roadmap: the next 10 hours</h2>
+  <p><b>The forecast is frozen at 710.0 t / 447.5 ha / 1.587 t/ha, and no task below moves it</b> - the shipped <span class="mono">submission.csv</span> is checksum-pinned and re-verified at the end of every block. What the next ten hours can still improve is everything around it: the resolution of the product, the honesty of its error bars, and how much can be independently re-derived from the repository alone. Each block pairs a verification task with the improvement it makes possible, and each carries an exit condition that can fail. With the number fixed in advance, an experiment can only report something true about the method; it cannot make the forecast look better.</p>
+  <div class="cols">
+    <div>
+      <table style="margin-top:0">
+        <tr><th style="width:15mm">Block</th><th>Task, improvement, and exit condition</th></tr>
+        <tr><td><b>H+0 → 2</b></td><td><b>Clean-clone reproduction.</b> Rebuild end-to-end from a fresh checkout on a second machine. <i>Improvement:</i> any non-determinism this exposes is pinned by an explicit seed rather than left to chance. Exit: byte-identical <span class="mono">submission.csv</span>, 12/12 regression, 19/19 defensibility, figures regenerated.</td></tr>
+        <tr><td><b>H+2 → 4</b></td><td><b>Submission-format dry run</b> against the host template: column names, units, plot-ID join, row count = 966. <i>Improvement:</i> if the template admits extra columns, we ship per-plot uncertainty and re-flight stability alongside yield instead of a bare number. Exit: a template-conformant file. In Round 2 a template caught a 1000× unit error every internal check had passed.</td></tr>
+        <tr><td><b>H+4 → 6</b></td><td><b>Anchor sensitivity sweep.</b> Re-run the village total across the published range of each crop anchor. <i>Improvement:</i> this converts our largest single uncertainty, <b>385.2 t</b>, from a stated assumption into a table a jury can read, without touching the shipped forecast. Exit: a per-crop sensitivity row for all five crops.</td></tr>
+      </table>
+    
+    <div>
+      <table style="margin-top:0">
+        <tr><th style="width:15mm">Block</th><th>Task, improvement, and exit condition</th></tr>
+        <tr><td><b>H+6 → 8</b></td><td><b>Deliverable packaging and the sub-village product.</b> Per-plot CSV (966 rows: yield, production, health index, uncertainty, re-flight stability) plus the 46-zone summary. <i>Improvement:</i> the 97-farm attention list ships in <b>stability tiers</b>, not as a flat list, so a reader knows which names to act on first. Exit: privacy gate re-run, no owner names or linked survey numbers in any published file.</td></tr>
+        <tr><td><b>H+8 → 9</b></td><td><b>Documentation freeze and adversarial rehearsal.</b> Cross-reference sweep over the writeup, the research log (P3-14 → P3-23) and the finale deck. <i>Improvement:</i> every claim must trace to the script and table that produced it, and any claim that cannot is cut rather than softened. Exit: the four hardest questions we can ask ourselves, answered in under a minute each: your modifier contributes 0.0 t, so what did the radar do · your anchor is someone else's statistic · a third of your named farms are unstable · 29 Oct is in a flood.</td></tr>
+        <tr><td><b>H+9 → 10</b></td><td><b>Submission and handover.</b> This check-in as PDF, repository access, credential rotation, and a final secret-scan of everything published. <i>Improvement:</i> the repository is left in a state a stranger can run, the only durable form of a defensibility claim. Exit: one command reproduces the deliverable.</td></tr>
+      </table>
+    
+  
+  <p><b>Experiments still running:</b> none that can change a shipped number, by design. One scientific item stays open: we could <i>not</i> internally test our own harvest-timing claim, so the epistemic split still rests on published crop calendars.</p>
+
+  <hr><p style="font-size:8pt">
+    <b>Appendix.</b> Code: <span class="mono">github.com/Jenish-fngghd/AISEHACK-2.0-T1-R3</span> (private until the round closes; access on request). Vendor SLCs, derived rasters and any record carrying an owner name are excluded from the repository by policy. &nbsp;·&nbsp;
+    <b>Data:</b> Capella Space X-band SLC (challenge issue) · Sentinel-1 GRD/RTC via Microsoft Planetary Computer STAC · Sentinel-2 L2A · ERA5-Land · MOAFW Crop Weather Watch Group weekly report, 10 Nov 2025 · Directorate of Economics &amp; Statistics, Gujarat · USDA FAS Cotton MY2025/26. &nbsp;·&nbsp;
+    <b>References:</b> Attema &amp; Ulaby (1978), Water Cloud Model, <i>Radio Science</i> 13(2) · Duchemin et al. (2008), SAFY, <i>Int. J. Remote Sensing</i> 29(6) · Dawid &amp; Skene (1979), <i>Applied Statistics</i> 28(1) · Sharma &amp; Goyal (1999), cotton picking distribution · Angelopoulos &amp; Bates (2023), conformal prediction.
+  
+  
+
