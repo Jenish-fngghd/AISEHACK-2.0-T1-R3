@@ -23,4 +23,7 @@ __pycache__/
 # the check-in is submitted as MIDNIGHT_CHECKIN.pdf / .docx instead. Those two are
 # deliberately NOT ignored -- they are the documentation the jury receives.
 *.md
+
+# ...except the one a reviewer needs to navigate and run this repository.
+!README.md
 *.html
